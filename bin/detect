@@ -1,0 +1,9 @@
+#!/bin/sh
+
+# this pack is valid for apps with a runner.sh in root
+if [ -f $1/runner.sh ]; then
+  echo "RunnerFramework"
+  exit 0
+else
+  exit 1
+fi
